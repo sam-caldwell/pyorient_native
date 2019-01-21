@@ -30,6 +30,7 @@ setup(
     name="pyorient_native",
     version="1.2.4",
     description="OrientDB Binary Serialization package for python",
+    long_description=open('README.md').read(),
     author="Nikul Ukani",
     author_email="nhu2001@columbia.edu",
     classifiers=[
