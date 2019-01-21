@@ -32,8 +32,23 @@ setup(
     description="OrientDB Binary Serialization package for python",
     author="Nikul Ukani",
     author_email="nhu2001@columbia.edu",
+    classifiers=[
+        'Development Status :: 5 - Production/Stable',
+        'Intended Audience :: Developers',
+        'Topic :: Software Development :: Libraries',
+        'License :: OSI Approved :: Apache Software License',
+        'Programming Language :: Python :: Implementation :: CPython',
+        'Programming Language :: Python :: 3.7',
+        'Programming Language :: C++'
+    ],
     ext_modules=[pyorient_native],
-    packages=find_packages(),
+    packages=find_packages(
+        exclude=[
+            'build',
+            'docs',
+            'tests'
+        ]
+    ),
     url="https://github.com/nikulukani/pyorient_native",
     download_url="https://github.com/nikulukani/pyorient_native/"
                  "archive/1.2.3.tar.gz"
