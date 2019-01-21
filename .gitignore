@@ -31,3 +31,8 @@
 #Ignore jetbrains project files
 .idea/
 *.iml
+
+dist/
+pyorient_native.egg-info/
+tests/__pycache__/
+tests/bin/*
