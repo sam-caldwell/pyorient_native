@@ -1,8 +1,10 @@
 """
-    1. Compile test_version_compare.cpp
-    2. Execute the version test.
-    3. If exit_code == 0, success
-    4. else fail.
+    This file contains a test for the version compare class
+    created by Sam Caldwell <mail@samcaldwell.net>
+
+    This will compile a c++ test program using the version compare class
+    and run that binary test.  It should be cross platform as it is a simple
+    string operation.
 """
 import unittest
 import subprocess
