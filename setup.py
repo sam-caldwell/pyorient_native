@@ -28,7 +28,7 @@ pyorient_native = Extension(
 )
 setup(
     name="pyorient_native",
-    version="1.2.3",
+    version="1.2.4",
     description="OrientDB Binary Serialization package for python",
     author="Nikul Ukani",
     author_email="nhu2001@columbia.edu",
@@ -49,6 +49,14 @@ setup(
             'tests'
         ]
     ),
+    extras_require={
+        'test': [
+            'coverage',
+            'pytest',
+            'pytest-cov',
+            'pytest-cython'
+        ],
+    },
     url="https://github.com/nikulukani/pyorient_native",
     download_url="https://github.com/nikulukani/pyorient_native/"
                  "archive/1.2.3.tar.gz"
