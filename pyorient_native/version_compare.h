@@ -64,8 +64,8 @@ public:
 	}
 
 public:
-	int major = 0;
-	int minor = 0;
-	int revision = 0;
-	int build = 0;
+	int major;
+	int minor;
+	int revision;
+	int build;
 };
