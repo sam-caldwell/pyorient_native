@@ -4,5 +4,19 @@ This package provides python interface for OrientDB binary Serialization. It pro
 pyorient_native is based on the OrientDB C driver (<https://github.com/orientechnologies/orientc>)
 
 # Installation
+```
 pip install pyorient_native
+```
 
+# Build from source
+```
+git@github.com:sam-caldwell/pyorient_native.git
+```
+
+```
+python3 setup.py build 
+```
+# Running Tests
+```
+python3 setup.py test 
+```
