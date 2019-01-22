@@ -1,4 +1,12 @@
+from os.path import join, dirname, abspath
 from setuptools import find_packages, setup, Extension
+
+
+def read_file(file_name):
+    here = abspath(dirname(__file__))
+    with open(join(here, file_name), encoding='utf-8') as f:
+        return f.read()
+
 
 h_files = [
     "pyorient_native/orientc_reader.h",
@@ -26,11 +34,12 @@ pyorient_native = Extension(
     language="c++",
     libraries=["stdc++"]
 )
+
 setup(
     name="pyorient_native",
     version="1.2.4",
     description="OrientDB Binary Serialization package for python",
-    long_description=open('README.md').read(),
+    long_description=read_file('README.md'),
     author="Nikul Ukani",
     author_email="nhu2001@columbia.edu",
     classifiers=[
@@ -52,9 +61,7 @@ setup(
     ),
     extras_require={
         'test': [
-            'coverage',
             'pytest',
-            'pytest-cov',
             'pytest-cython'
         ],
     },
