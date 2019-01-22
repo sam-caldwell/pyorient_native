@@ -65,6 +65,9 @@ setup(
             'pytest-cython'
         ],
     },
+    setup_requires=["pytest-runner"],
+    tests_require=["pytest"],
+    zip_safe=False,
     url="https://github.com/nikulukani/pyorient_native",
     download_url="https://github.com/nikulukani/pyorient_native/"
                  "archive/1.2.3.tar.gz"
